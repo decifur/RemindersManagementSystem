@@ -9,8 +9,6 @@ import Logout from './components/Logout.jsx'
 import LoginFailed from './components/LoginFailed.jsx'
 import Welcome from './components/Welcome.jsx'
 import ThankYou from './components/ThankYou.jsx'
-import EnableReminder from './components/EnableReminder.jsx'
-import DisableReminder from './components/DisableReminder.jsx'
 import DeleteReminder from './components/DeleteReminder.jsx'
 import ModifyReminder from './components/ModifyReminder.jsx'
 import ViewReminder from './components/ViewReminder.jsx'
@@ -28,8 +26,6 @@ export default function App() {
           <Route exact path="/set-reminder" element={<SetReminder />} />
           <Route exact path="/modify-reminder" element={<ModifyReminder />} />
           <Route exact path="/delete-reminder" element={<DeleteReminder />} />
-          <Route exact path="/disable-reminder" element={<DisableReminder />} />
-          <Route exact path="/enable-reminder" element={<EnableReminder />} />
           <Route exact path="/thank-you" element={<ThankYou />} />
           <Route exact path="/view-reminder" element={<ViewReminder />} />
         </Routes>
