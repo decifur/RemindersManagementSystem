@@ -65,9 +65,7 @@ function Welcome() {
           <br />
           <a href="set-reminder">Set Reminder</a>
           <br /> <a href="modify-reminder">Modify Reminder</a>
-          <br /> <a href="disable-reminder">Disable Reminder</a>
           <br /> <a href="delete-reminder">Delete Reminder</a>
-          <br /> <a href="enable-reminder">Enable Reminder</a>
           <br /> <a href="view-reminder">View Reminder</a>
           <br />
           <div
