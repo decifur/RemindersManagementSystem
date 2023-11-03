@@ -7,6 +7,7 @@ Manage your tasks and never miss a deadline with the Reminder Management System.
 To get this project up and running on your local machine, follow these steps:
 
 1. Clone this repository to your local environment:
+
    ```
    git clone https://github.com/yourusername/reminder-management.git
 
@@ -17,13 +18,13 @@ To get this project up and running on your local machine, follow these steps:
 
 3. Install the project dependencies:
 
-```
-npm install
+    ```
+    npm install
 
 
 4. Start the development server:
 
-```
-npm start
+    ```
+    npm start
 
 
