@@ -1,8 +1,7 @@
 import React from 'react';
-import { ReminderContext } from './Context.jsx';
+import { logout } from './utilities';
 
 function DeleteReminder() {
-  let { logout } = React.useContext(ReminderContext);
   var reminderData = JSON.parse(localStorage.getItem('reminder'));
   const [id, setID] = React.useState(null);
   const [data, setData] = React.useState({
