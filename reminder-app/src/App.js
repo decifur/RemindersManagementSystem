@@ -15,6 +15,11 @@ import ViewReminder from './components/ViewReminder.jsx'
 import SetReminder from './components/SetReminder.jsx'
 
 export default function App() {
+  React.useEffect(() => {
+    if (!localStorage.getItem('reminder'))
+      localStorage.setItem('reminder', JSON.stringify([]));
+    if (!localStorage.getItem('user')) localStorage.setItem('user', null);
+  }, []);
   return (
     <>
       <BrowserRouter>
