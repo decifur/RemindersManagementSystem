@@ -18,7 +18,6 @@ To get this project up and running on your local machine, follow these steps:
 1. Clone this repository to your local environment:
    ```
    git clone https://github.com/yourusername/reminder-management.git
-```
 
 2. Navigate to the project directory:
 
