@@ -1,7 +1,17 @@
 import React from 'react';
-import { ReminderContext } from './Context.jsx';
+import { logout } from './utilities';
+const dataFrame = {
+  date: '',
+  subject: '',
+  description: '',
+  email: '',
+  contact: '',
+  sms: '',
+  recur: '',
+  enable: true,
+};
+
 function ModifyReminder() {
-  let { logout,dataFrame } = React.useContext(ReminderContext);
   var reminderData = JSON.parse(localStorage.getItem('reminder'));
   const [id, setID] = React.useState(null);
   const [data, setData] = React.useState(dataFrame);
@@ -25,6 +35,11 @@ function ModifyReminder() {
     if (type === 'contact') {
       setData((prev) => {
         return { ...prev, contact: value };
+      });
+    }
+    if (type === 'email') {
+      setData((prev) => {
+        return { ...prev, email: value };
       });
     }
     if (type === 'sms') {
