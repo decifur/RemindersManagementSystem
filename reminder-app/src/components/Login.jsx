@@ -1,5 +1,6 @@
 import React from 'react';
 import { users } from '../data.js';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [username, setUsername] = React.useState('');
@@ -27,9 +28,10 @@ function Login() {
       return;
     }
   }
+  const navigate = useNavigate();
   React.useEffect(() => {
     if (localStorage.getItem('user') !== 'null') {
-      window.location.href = '/home';
+       navigate('/home');//window.location.href = '/home';
     }
   }, []);
   return (
