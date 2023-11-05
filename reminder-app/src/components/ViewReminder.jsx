@@ -1,8 +1,7 @@
 import React from 'react';
-import { ReminderContext } from './Context';
+import { logout } from './utilities';
 
 function ViewReminder() {
-  const { logout } = React.useContext(ReminderContext);
   const reminderdata = JSON.parse(localStorage.getItem('reminder'));
   return (
     <>
