@@ -1,7 +1,6 @@
 import React from 'react';
-import { ReminderContext } from './Context';
+import { logout } from './utilities';
 function Welcome() {
-  const { logout } = React.useContext(ReminderContext);
   const d = new Date();
   function TodayDay(num) {
     if (num === 0) return 'Sunday';
